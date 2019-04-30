@@ -1,19 +1,38 @@
 <html>
     <head>
         <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div class='container'>
 
         </div>
         <script>
-            let gridSize = 16;
-            const mainDiv = document.querySelector('container');
-            const body = document.querySelector('body');
+            let gridHeight = 16;
+            let gridWidth = 16;
+            let gridSize = gridHeight * gridWidth;
+
+            const mainDiv = document.querySelector('.container');
 
             function createDivBox(gridSize) {
-              
+                if (gridSize <= 0) {
+                    return;
+                }
+                else {
+                  console.log(gridSize);
+                  let cell = document.createElement('div');
+                  cell.classList.add('box');
+                  cell.style.height = 100/gridHeight + '%';
+                  cell.style.width = 100/gridWidth + '%';
+
+                  mainDiv.appendChild(cell);
+
+                  
+                  return createDivBox(gridSize - 1);
+              }
             }
+
+            createDivBox(gridSize);
         </script>
     </body>
 </html>
