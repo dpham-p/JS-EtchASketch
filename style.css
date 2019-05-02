@@ -1,13 +1,59 @@
 
-.container {
+.center{
     height: 80%;
-    width: 80%;
-    margin: 10%;
-    align-content: center;
+    width: 50%;
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
     border: 1px solid black;
+
 }
 
 .box {
     float: left;
     outline: 1px solid black;
+}
+
+.etched {
+    background-color: black;
+}
+
+.inputs {
+    text-align: center;
+    margin: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+t {
+    font-size: 16pt;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+input {
+    font-size: 16pt;
+    width: 50px;
+    border: 1px solid black;
+}
+
+button {
+    font-size: 16pt;
+    height: 50px;
+    width: auto;
 }
