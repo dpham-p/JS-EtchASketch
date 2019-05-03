@@ -1,4 +1,8 @@
 
+body {
+    background-color: lightgrey;
+}
+
 .center{
     height: 80%;
     width: 50%;
@@ -12,7 +16,7 @@
 .container {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
+    border: 10px solid gold;
 
 }
 
@@ -21,9 +25,7 @@
     outline: 1px solid black;
 }
 
-.etched {
-    background-color: black;
-}
+
 
 .inputs {
     text-align: center;
@@ -56,4 +58,6 @@ button {
     font-size: 16pt;
     height: 50px;
     width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
 }
