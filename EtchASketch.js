@@ -101,6 +101,7 @@ function etchColor(e) {
     e.target.style.backgroundColor = randomColor();
 }
 
+//  Add/remove event listeners for etching
 function colorMode() {
     let cells = document.querySelectorAll('.box');
     
